@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #9F8C7F;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #c9bfb6;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="Search" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+		<a id="Work" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> </a>
+		<a id="CV" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-lines"></i> </a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Home')
+				window.open("https://www.notion.so/secondbrain-mariana/Home-Dashboard-ad7346c5b2554a56b92396b9e7b07305#e567b297bedd4eb9b9d1d68193692c8c", '_blank').focus();
+			else if (id == 'Search')
+				window.open("https://www.notion.so/secondbrain-mariana/Job-Searching-442eb492d59948d58cff94790e961d67", '_blank').focus();
+			else if (id == 'Work')
+				window.open("https://www.notion.so/secondbrain-mariana/Work-01dc79474227416bb545dd3adc21eb5b", '_blank').focus();
+			else if (id == 'CV')
+				window.open("https://www.notion.so/secondbrain-mariana/Curriculum-Vitae-58b01080511b4f539476c89696c177df", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
