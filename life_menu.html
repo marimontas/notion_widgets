@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #9f8c7f;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #C9BFB6;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> </a>
+		<a id="Index" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-comments"></i> </a>
+		<a id="Groceries" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
+		<a id="Finances" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> </a>
+		<a id="Closet" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-shirt"></i> </a>
+		<a id="SelfCare" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> </a>
+		<a id="Fitness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumbbell"></i> </a>
+		<a id="House" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-broom"></i> </a>
+		<a id="Health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart-pulse"></i> </a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Home')
+				window.open("https://www.notion.so/secondbrain-mariana/Home-Dashboard-ad7346c5b2554a56b92396b9e7b07305#b28ca658fdc74255b8b481347cdba0e6", '_blank').focus();
+			else if (id == 'Index')
+				window.open("https://www.notion.so/secondbrain-mariana/Index-ba5615bf87ea4121b404b4a42c81c0bf", '_blank').focus();
+			else if (id == 'Groceries')
+				window.open("https://www.notion.so/Groceries-List-a53993abec5e435ca3fc664844ba1abd", '_blank').focus();
+			else if (id == 'Finances')
+				window.open("https://www.notion.so/secondbrain-mariana/Finances-8787439c2484434ba69a122a1c1bf20b", '_blank').focus();
+			else if (id == 'Closet')
+				window.open("https://www.notion.so/secondbrain-mariana/Closet-9ba15b2963bf4fbc93378f62761d3b2c", '_blank').focus();
+			else if (id == 'SelfCare')
+				window.open("https://www.notion.so/secondbrain-mariana/Self-Care-2499e1c691e743ab8fc8b301338b8778", '_blank').focus();
+			else if (id == 'Fitness')
+				window.open("https://www.notion.so/secondbrain-mariana/Fitness-71ce6f622a3c4e3ebffdb034620126bb", '_blank').focus();
+			else if (id == 'House')
+				window.open("https://www.notion.so/secondbrain-mariana/House-343d59fd112d4f928a6b1bd57c311eed", '_blank').focus();
+			else if (id == 'Health')
+				window.open("https://www.notion.so/secondbrain-mariana/Health-726a8ccd06fa4012b0c06ecef214c6b3", '_blank').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
